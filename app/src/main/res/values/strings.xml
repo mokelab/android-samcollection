@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SamCollection</string>
+    <string name="jetpack_top_foundation">Foundation</string>
+    <string name="jetpack_top_architecture">Architecture</string>
+    <string name="jetpack_top_behavior">Behavior</string>
+    <string name="jetpack_top_ui">UI</string>
+    <string name="main_jetpack">Jetpack</string>
 </resources>
