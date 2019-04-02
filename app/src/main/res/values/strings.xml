@@ -37,5 +37,6 @@
     <string name="lightMuted_color">LightMuted color</string>
     <string name="darkVibrant_color">DarkVibrant color</string>
     <string name="darkMuted_color">DarkMuted color</string>
+    <string name="input_name">Input name</string>
 
 </resources>

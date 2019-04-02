@@ -9,6 +9,7 @@ class JetpackDatabindingTopFragment : MenuListFragment() {
 
     override fun onMenuItemClicked(position: Int) = when (position) {
         0 -> this.navigate(R.id.action_jetpackDatabinding_to_Basic)
+        1 -> this.navigate(R.id.action_jetpackDatabinding_to_twoWay)
         else -> println("nop")
     }
 
