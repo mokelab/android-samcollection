@@ -19,10 +19,12 @@
         <item>@string/jetpack_databinding</item>
         <item>@string/jetpack_arch_livedata</item>
         <item>@string/jetpack_arch_viewmodel</item>
+        <item>@string/jetpack_arch_room</item>
     </string-array>
     <string name="jetpack_databinding">Databinding</string>
     <string name="jetpack_arch_livedata">LiveData</string>
     <string name="jetpack_arch_viewmodel">ViewModel</string>
+    <string name="jetpack_arch_room">Room</string>
 
     <string-array name="jetpack_databinding">
         <item>@string/jetpack_databinding_basic</item>
@@ -36,6 +38,10 @@
         <item>@string/jetpack_viewmodel_scope</item>
     </string-array>
     <string name="jetpack_viewmodel_scope">ViewModel Scope(ktx)</string>
+
+    <string-array name="jetpack_room">
+        <item>@string/basic_usage</item>
+    </string-array>
 
     <string-array name="jetpack_ui">
         <item>@string/jetpack_ui_palette</item>
