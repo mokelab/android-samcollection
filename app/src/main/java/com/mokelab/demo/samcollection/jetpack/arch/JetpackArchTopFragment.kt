@@ -1,15 +1,14 @@
-package com.mokelab.demo.samcollection.jetpack
+package com.mokelab.demo.samcollection.jetpack.arch
 
 import androidx.navigation.Navigation
 import com.mokelab.demo.samcollection.MenuListFragment
 import com.mokelab.demo.samcollection.R
 
-class JetpackTopFragment : MenuListFragment() {
-    override fun onCreateMenuLabel() = resources.getStringArray(R.array.jetpack_top).toList()
+class JetpackArchTopFragment : MenuListFragment() {
+    override fun onCreateMenuLabel() = resources.getStringArray(R.array.jetpack_arch).toList()
 
     override fun onMenuItemClicked(position: Int) = when (position) {
-        1 -> this.navigate(R.id.action_jetpackTop_to_jetpackArch)
-        3 -> this.navigate(R.id.action_jetpackTop_to_jetpackUI)
+        0 -> this.navigate(R.id.action_jetpackArchTop_to_jetpackLiveData)
         else -> println("nop")
     }
 

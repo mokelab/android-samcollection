@@ -13,6 +13,11 @@
     <string name="jetpack_top_behavior">Behavior</string>
     <string name="jetpack_top_ui">UI</string>
 
+    <string-array name="jetpack_arch">
+        <item>@string/jetpack_arch_livedata</item>
+    </string-array>
+    <string name="jetpack_arch_livedata">LiveData</string>
+
     <string-array name="jetpack_ui">
         <item>@string/jetpack_ui_palette</item>
     </string-array>
