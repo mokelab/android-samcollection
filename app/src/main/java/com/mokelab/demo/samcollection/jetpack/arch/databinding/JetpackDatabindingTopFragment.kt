@@ -8,7 +8,7 @@ class JetpackDatabindingTopFragment : MenuListFragment() {
     override fun onCreateMenuLabel() = resources.getStringArray(R.array.jetpack_databinding).toList()
 
     override fun onMenuItemClicked(position: Int) = when (position) {
-        0 -> this.navigate(R.id.action_jetpackArchTop_to_jetpackLiveData)
+        0 -> this.navigate(R.id.action_jetpackDatabinding_to_Basic)
         else -> println("nop")
     }
 
