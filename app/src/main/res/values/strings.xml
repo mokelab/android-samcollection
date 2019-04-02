@@ -2,6 +2,8 @@
     <string name="app_name">SamCollection</string>
     <string name="main_jetpack">Jetpack</string>
 
+    <string name="basic_usage">Basic Usage</string>
+
     <string-array name="jetpack_top">
         <item>@string/jetpack_top_foundation</item>
         <item>@string/jetpack_top_architecture</item>
@@ -16,9 +18,11 @@
     <string-array name="jetpack_arch">
         <item>@string/jetpack_databinding</item>
         <item>@string/jetpack_arch_livedata</item>
+        <item>@string/jetpack_arch_viewmodel</item>
     </string-array>
     <string name="jetpack_databinding">Databinding</string>
     <string name="jetpack_arch_livedata">LiveData</string>
+    <string name="jetpack_arch_viewmodel">ViewModel</string>
 
     <string-array name="jetpack_databinding">
         <item>@string/jetpack_databinding_basic</item>
@@ -26,6 +30,12 @@
     </string-array>
     <string name="jetpack_databinding_basic">Basic usage</string>
     <string name="jetpack_databinding_twoway">Two-way binding</string>
+
+    <string-array name="jetpack_viewmodel">
+        <item>@string/basic_usage</item>
+        <item>@string/jetpack_viewmodel_scope</item>
+    </string-array>
+    <string name="jetpack_viewmodel_scope">ViewModel Scope(ktx)</string>
 
     <string-array name="jetpack_ui">
         <item>@string/jetpack_ui_palette</item>
@@ -37,6 +47,8 @@
     <string name="lightMuted_color">LightMuted color</string>
     <string name="darkVibrant_color">DarkVibrant color</string>
     <string name="darkMuted_color">DarkMuted color</string>
+
     <string name="input_name">Input name</string>
+
 
 </resources>

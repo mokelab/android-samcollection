@@ -40,6 +40,10 @@
                 app:destination="@id/jetpackDatabindingTopFragment" app:enterAnim="@anim/nav_default_enter_anim"
                 app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
                 app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_jetpackArch_to_ViewModel"
+                app:destination="@id/jetpackViewModelTopFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
     <fragment android:id="@+id/jetpackLiveDataFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.livedata.JetpackLiveDataFragment"
@@ -62,4 +66,12 @@
     <fragment android:id="@+id/jetpackDatabindingTwoWayFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.databinding.JetpackDatabindingTwoWayFragment"
               android:label="JetpackDatabindingTwoWayFragment"/>
+    <fragment android:id="@+id/jetpackViewModelTopFragment"
+              android:name="com.mokelab.demo.samcollection.jetpack.arch.viewmodel.JetpackViewModelTopFragment"
+              android:label="JetpackViewModelTopFragment">
+        <action android:id="@+id/action_jetpackViewModel_to_LiveData"
+                app:destination="@id/jetpackLiveDataFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
 </navigation>
