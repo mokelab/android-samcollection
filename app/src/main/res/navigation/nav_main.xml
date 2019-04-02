@@ -87,5 +87,13 @@
               android:label="JetpackViewModelScopeFragment"/>
     <fragment android:id="@+id/jetpackRoomTopFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.room.JetpackRoomTopFragment"
-              android:label="JetpackRoomTopFragment"/>
+              android:label="JetpackRoomTopFragment">
+        <action android:id="@+id/action_jetpackRoom_to_Basic"
+                app:destination="@id/jetpackRoomBasicFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment android:id="@+id/jetpackRoomBasicFragment"
+              android:name="com.mokelab.demo.samcollection.jetpack.arch.room.JetpackRoomBasicFragment"
+              android:label="JetpackRoomBasicFragment"/>
 </navigation>

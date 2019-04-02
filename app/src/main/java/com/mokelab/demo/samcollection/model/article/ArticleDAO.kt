@@ -11,6 +11,9 @@ interface ArticleDAO {
     @Query("SELECT * from article WHERE id=:id")
     fun getById(id: Int): LiveData<Article>
 
+    @Query("SELECT * from article ORDER BY id desc")
+    fun getAll(): LiveData<List<Article>>
+
     @Update
     fun update(article: Article)
 
