@@ -51,7 +51,7 @@ class JetpackLiveDataFragment: BindingFragment<JetpackLivedataFragmentBinding>()
         launch {
             // simulate network communication
             val user = withContext(Dispatchers.IO) {
-                Thread.sleep(3000)
+                delay(3000)
                 User("moke", "moke@example.com")
             }
             viewModel.user.value = user
