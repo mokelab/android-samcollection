@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mokelab.demo.binding.BindingFragment
+import com.mokelab.demo.samcollection.R
 import com.mokelab.demo.samcollection.databinding.JetpackRoomBasicFragmentBinding
 
 class JetpackRoomBasicFragment: BindingFragment<JetpackRoomBasicFragmentBinding>() {
@@ -16,7 +18,7 @@ class JetpackRoomBasicFragment: BindingFragment<JetpackRoomBasicFragmentBinding>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        this.viewModel = ViewModelProviders.of(this).get(JetpackRoomBasicViewModel::class.java)
+        this.viewModel = ViewModelProviders.of(requireActivity()).get(JetpackRoomBasicViewModel::class.java)
     }
 
     override fun onCreateViewDataBinding(
@@ -28,6 +30,11 @@ class JetpackRoomBasicFragment: BindingFragment<JetpackRoomBasicFragmentBinding>
 
         binding.recycler.layoutManager = LinearLayoutManager(inflater.context, LinearLayoutManager.VERTICAL, false)
         this.adapter = ArticleAdapter(inflater.context)
+        binding.recycler.adapter = this.adapter
+
+        binding.fab.setOnClickListener {
+            Navigation.findNavController(view!!).navigate(R.id.action_jetpackRoomBasic_to_Create)
+        }
 
         return binding
     }
@@ -36,6 +43,7 @@ class JetpackRoomBasicFragment: BindingFragment<JetpackRoomBasicFragmentBinding>
         super.onActivityCreated(savedInstanceState)
         this.viewModel.dao.getAll().observe(this, Observer {
             adapter.submitList(it)
+            adapter.notifyDataSetChanged()
         })
     }
 

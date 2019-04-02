@@ -55,6 +55,9 @@
     <string name="darkMuted_color">DarkMuted color</string>
 
     <string name="input_name">Input name</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="done">Done</string>
 
 
 </resources>
