@@ -73,5 +73,12 @@
                 app:destination="@id/jetpackLiveDataFragment" app:enterAnim="@anim/nav_default_enter_anim"
                 app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
                 app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_jetpackViewModel_to_Scope"
+                app:destination="@id/jetpackViewModelScopeFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
+    <fragment android:id="@+id/jetpackViewModelScopeFragment"
+              android:name="com.mokelab.demo.samcollection.jetpack.arch.viewmodel.JetpackViewModelScopeFragment"
+              android:label="JetpackViewModelScopeFragment"/>
 </navigation>

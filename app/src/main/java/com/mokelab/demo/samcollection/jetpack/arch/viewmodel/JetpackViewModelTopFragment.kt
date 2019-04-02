@@ -9,7 +9,7 @@ class JetpackViewModelTopFragment : MenuListFragment() {
 
     override fun onMenuItemClicked(position: Int) = when (position) {
         0 -> this.navigate(R.id.action_jetpackViewModel_to_LiveData)
-        1 -> this.navigate(R.id.action_jetpackArchTop_to_jetpackLiveData)
+        1 -> this.navigate(R.id.action_jetpackViewModel_to_Scope)
         else -> println("nop")
     }
 
