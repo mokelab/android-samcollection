@@ -6,9 +6,9 @@
         <variable name="article" type="com.mokelab.demo.samcollection.model.article.Article"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="?android:selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
     >
         <TextView
             android:id="@+id/title_text"
