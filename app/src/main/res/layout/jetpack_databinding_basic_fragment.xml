@@ -6,8 +6,8 @@
         <variable name="user" type="com.mokelab.demo.samcollection.jetpack.arch.databinding.User"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <TextView
             android:id="@+id/name_text"
             android:layout_width="wrap_content"
