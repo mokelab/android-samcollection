@@ -14,4 +14,9 @@ class JetpackDatabindingTwoWayFragment: Fragment(R.layout.jetpack_databinding_tw
         super.onViewCreated(view, savedInstanceState)
         _binding = JetpackDatabindingTwowayFragmentBinding.bind(view)
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
