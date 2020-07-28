@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/jetpack" />
             <option value="$PROJECT_DIR$/libraries/jetpack/core" />
+            <option value="$PROJECT_DIR$/utils" />
+            <option value="$PROJECT_DIR$/utils/recycler" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

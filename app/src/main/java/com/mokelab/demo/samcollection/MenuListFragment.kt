@@ -7,10 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mokelab.demo.binding.BindingFragment
-import com.mokelab.demo.samcollection.databinding.MainFragmentBinding
-import com.mokelab.demo.samcollection.databinding.MenuListFragmentBinding
+import com.mokelab.demo.samcollection.databinding.MenuListFragment2Binding
 
-abstract class MenuListFragment : BindingFragment<MenuListFragmentBinding>() {
+abstract class MenuListFragment : BindingFragment<MenuListFragment2Binding>() {
     private lateinit var recycler: RecyclerView
     private lateinit var adapter: MenuListAdapter
 
@@ -18,10 +17,10 @@ abstract class MenuListFragment : BindingFragment<MenuListFragmentBinding>() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): MenuListFragmentBinding {
-        val binding = MenuListFragmentBinding.inflate(inflater, container, false)
+    ): MenuListFragment2Binding {
+        val binding = MenuListFragment2Binding.inflate(inflater, container, false)
 
-        this.adapter = MenuListAdapter(context!!, this.listener)
+        this.adapter = MenuListAdapter(requireContext(), this.listener)
         this.adapter.submitList(this.onCreateMenuLabel())
 
         this.recycler = binding.recycler

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jetpack_top">
+        <item>@string/jetpack_top_foundation</item>
+        <item>@string/jetpack_top_architecture</item>
+        <item>@string/jetpack_top_behavior</item>
+        <item>@string/jetpack_top_ui</item>
+    </string-array>
+    <string name="jetpack_top_foundation">Foundation</string>
+    <string name="jetpack_top_architecture">Architecture</string>
+    <string name="jetpack_top_behavior">Behavior</string>
+    <string name="jetpack_top_ui">UI</string>
+</resources>
