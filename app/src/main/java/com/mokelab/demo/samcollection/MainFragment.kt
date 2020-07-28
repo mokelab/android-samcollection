@@ -1,6 +1,7 @@
 package com.mokelab.demo.samcollection
 
 import androidx.navigation.Navigation
+import com.mokelab.demo.util.recycler.MenuListFragment
 
 class MainFragment : MenuListFragment() {
     override fun onCreateMenuLabel() = listOf(
@@ -13,6 +14,6 @@ class MainFragment : MenuListFragment() {
     }
 
     private fun navigate(action: Int) {
-        Navigation.findNavController(view!!).navigate(action)
+        Navigation.findNavController(requireView()).navigate(action)
     }
 }

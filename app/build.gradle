@@ -44,6 +44,7 @@ dependencies {
 
     implementation project(':binding')
     implementation project(':libraries:jetpack:core')
+    implementation project(':utils:recycler')
 
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
