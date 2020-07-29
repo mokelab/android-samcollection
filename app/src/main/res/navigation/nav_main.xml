@@ -5,10 +5,13 @@
 
     <fragment android:id="@+id/mainFragment" android:name="com.mokelab.demo.samcollection.MainFragment"
               android:label="MainFragment">
-        <action android:id="@+id/action_main_to_jetpackTop"
-                app:destination="@id/jetpackTopFragment" app:enterAnim="@anim/nav_default_enter_anim"
-                app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_main_to_nav_jetpack"
+            app:destination="@id/nav_jetpack"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment android:id="@+id/jetpackTopFragment"
               android:name="com.mokelab.demo.libs.jetpack.JetpackTopFragment"
@@ -104,4 +107,5 @@
     <fragment android:id="@+id/jetpackRoomCreateFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.room.JetpackRoomCreateFragment"
               android:label="JetpackRoomCreateFragment"/>
+    <include app:graph="@navigation/nav_jetpack" />
 </navigation>

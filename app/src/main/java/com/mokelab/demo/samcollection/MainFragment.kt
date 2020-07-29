@@ -9,7 +9,7 @@ class MainFragment : MenuListFragment() {
     )
 
     override fun onMenuItemClicked(position: Int) = when (position) {
-        0 -> this.navigate(R.id.action_main_to_jetpackTop)
+        0 -> this.navigate(R.id.action_main_to_nav_jetpack)
         else -> println("nop")
     }
 
