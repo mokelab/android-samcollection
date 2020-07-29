@@ -6,5 +6,25 @@
     <fragment
         android:id="@+id/jetpackArchTopFragment"
         android:name="com.mokelab.demo.libs.jetpack.arch.JetpackArchTopFragment"
-        android:label="JetpackArchTopFragment" />
+        android:label="JetpackArchTopFragment" >
+        <action
+            android:id="@+id/action_arch_top_to_viewmodel"
+            app:destination="@id/jetpackViewModelTopFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/jetpackViewModelTopFragment"
+        android:name="com.mokelab.demo.libs.jetpack.arch.viewmodel.JetpackViewModelTopFragment"
+        android:label="JetpackViewModelTopFragment" >
+        <action
+            android:id="@+id/action_viewmodel_to_scope"
+            app:destination="@id/jetpackViewModelScopeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jetpackViewModelScopeFragment"
+        android:name="com.mokelab.demo.libs.jetpack.arch.viewmodel.JetpackViewModelScopeFragment"
+        android:label="JetpackViewModelScopeFragment" />
 </navigation>

@@ -63,7 +63,7 @@
               android:name="com.mokelab.demo.samcollection.jetpack.arch.databinding.JetpackDatabindingTwoWayFragment"
               android:label="JetpackDatabindingTwoWayFragment"/>
     <fragment android:id="@+id/jetpackViewModelTopFragment"
-              android:name="com.mokelab.demo.samcollection.jetpack.arch.viewmodel.JetpackViewModelTopFragment"
+              android:name="com.mokelab.demo.libs.jetpack.arch.viewmodel.JetpackViewModelTopFragment"
               android:label="JetpackViewModelTopFragment">
         <action android:id="@+id/action_jetpackViewModel_to_LiveData"
                 app:destination="@id/jetpackLiveDataFragment" app:enterAnim="@anim/nav_default_enter_anim"
@@ -75,7 +75,7 @@
                 app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
     <fragment android:id="@+id/jetpackViewModelScopeFragment"
-              android:name="com.mokelab.demo.samcollection.jetpack.arch.viewmodel.JetpackViewModelScopeFragment"
+              android:name="com.mokelab.demo.libs.jetpack.arch.viewmodel.JetpackViewModelScopeFragment"
               android:label="JetpackViewModelScopeFragment"/>
     <fragment android:id="@+id/jetpackRoomTopFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.room.JetpackRoomTopFragment"

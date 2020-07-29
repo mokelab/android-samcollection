@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="basic_usage">Basic Usage</string>
+
     <string-array name="jetpack_arch">
         <item>@string/jetpack_databinding</item>
         <item>@string/jetpack_arch_livedata</item>
@@ -10,4 +12,11 @@
     <string name="jetpack_arch_livedata">LiveData</string>
     <string name="jetpack_arch_viewmodel">ViewModel</string>
     <string name="jetpack_arch_room">Room</string>
+
+    <string-array name="jetpack_viewmodel">
+        <item>@string/basic_usage</item>
+        <item>@string/jetpack_viewmodel_scope</item>
+    </string-array>
+    <string name="jetpack_viewmodel_scope">ViewModel Scope(ktx)</string>
+
 </resources>
