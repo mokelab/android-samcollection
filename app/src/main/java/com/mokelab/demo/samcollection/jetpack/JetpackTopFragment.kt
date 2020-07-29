@@ -9,7 +9,6 @@ class JetpackTopFragment : MenuListFragment() {
 
     override fun onMenuItemClicked(position: Int) = when (position) {
         1 -> this.navigate(R.id.action_jetpackTop_to_jetpackArch)
-        3 -> this.navigate(R.id.action_jetpackTop_to_jetpackUI)
         else -> println("nop")
     }
 

@@ -43,17 +43,6 @@
         <item>@string/basic_usage</item>
     </string-array>
 
-    <string-array name="jetpack_ui">
-        <item>@string/jetpack_ui_palette</item>
-    </string-array>
-    <string name="jetpack_ui_palette">Palette</string>
-    <string name="vibrant_color">Vibrant color</string>
-    <string name="dominant_color">Dominant color</string>
-    <string name="lightVibrant_color">LightVibrant color</string>
-    <string name="lightMuted_color">LightMuted color</string>
-    <string name="darkVibrant_color">DarkVibrant color</string>
-    <string name="darkMuted_color">DarkMuted color</string>
-
     <string name="input_name">Input name</string>
     <string name="title">Title</string>
     <string name="content">Content</string>

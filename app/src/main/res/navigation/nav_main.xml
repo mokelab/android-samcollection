@@ -16,22 +16,11 @@
     <fragment android:id="@+id/jetpackTopFragment"
               android:name="com.mokelab.demo.libs.jetpack.JetpackTopFragment"
               android:label="JetpackTopFragment">
-        <action android:id="@+id/action_jetpackTop_to_jetpackUI"
-                app:destination="@id/jetpackUIFragment"/>
         <action android:id="@+id/action_jetpackTop_to_jetpackArch"
                 app:destination="@id/jetpackArchTopFragment" app:enterAnim="@anim/nav_default_enter_anim"
                 app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
                 app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
-    <fragment android:id="@+id/jetpackUIFragment"
-              android:name="com.mokelab.demo.samcollection.jetpack.ui.JetpackUIFragment"
-              android:label="JetpackUIFragment">
-        <action android:id="@+id/action_jetpackUI_to_jetpackPalette"
-                app:destination="@id/jetpackPaletteFragment"/>
-    </fragment>
-    <fragment android:id="@+id/jetpackPaletteFragment"
-              android:name="com.mokelab.demo.samcollection.jetpack.ui.palette.JetpackPaletteFragment"
-              android:label="JetpackPaletteFragment"/>
     <fragment android:id="@+id/jetpackArchTopFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.JetpackArchTopFragment"
               android:label="JetpackArchTopFragment">
