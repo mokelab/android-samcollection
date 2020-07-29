@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_jetpack_arch"
+    app:startDestination="@id/jetpackArchTopFragment">
+
+    <fragment
+        android:id="@+id/jetpackArchTopFragment"
+        android:name="com.mokelab.demo.libs.jetpack.arch.JetpackArchTopFragment"
+        android:label="JetpackArchTopFragment" />
+</navigation>

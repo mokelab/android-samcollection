@@ -1,3 +1,4 @@
+include ':libraries:jetpack:arch'
 include ':libraries:jetpack:ui'
 include ':utils:recycler'
 include ':libraries:jetpack:core'

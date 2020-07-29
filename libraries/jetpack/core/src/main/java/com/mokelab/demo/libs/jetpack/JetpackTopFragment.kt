@@ -9,20 +9,8 @@ class JetpackTopFragment : MenuListFragment() {
 
     override fun onMenuItemClicked(position: Int) {
         when (position) {
+            1 -> findNavController().navigate(R.id.action_jetpack_top_to_arch)
             3 -> findNavController().navigate(R.id.action_jetpack_top_to_ui)
         }
-    } /*
-    when (position) {
-        1 -> this.navigate(R.id.action_jetpackTop_to_jetpackArch)
-        3 -> this.navigate(R.id.action_jetpackTop_to_jetpackUI)
-        else -> println("nop")
     }
-    */
-
-    /*
-    private fun navigate(action: Int) {
-        Navigation.findNavController(view!!).navigate(action)
-    }
-     */
-
 }

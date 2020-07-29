@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/binding" />
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/jetpack" />
+            <option value="$PROJECT_DIR$/libraries/jetpack/arch" />
             <option value="$PROJECT_DIR$/libraries/jetpack/core" />
             <option value="$PROJECT_DIR$/libraries/jetpack/ui" />
             <option value="$PROJECT_DIR$/utils" />
