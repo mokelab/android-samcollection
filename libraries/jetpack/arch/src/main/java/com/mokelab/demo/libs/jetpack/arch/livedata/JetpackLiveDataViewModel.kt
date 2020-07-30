@@ -1,4 +1,4 @@
-package com.mokelab.demo.libs.jetpack.arch.viewmodel
+package com.mokelab.demo.libs.jetpack.arch.livedata
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,22 +9,23 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class JetpackViewModel: ViewModel() {
-    private var loading = false
+class JetpackLiveDataViewModel: ViewModel() {
+    val loading = MutableLiveData<Boolean>()
     val user = MutableLiveData<User>()
 
-    fun load() {
-        if (loading) {
+    fun loadUser() {
+        if (loading.value == true) {
             return
         }
-        loading = true
-        // viewModelScope is Main thread
+        loading.value = true
         viewModelScope.launch {
             val user = withContext(Dispatchers.IO) {
                 delay(3000)
                 User("moke", "moke@example.com")
             }
-            this@JetpackViewModel.user.value = user
+            this@JetpackLiveDataViewModel.user.value = user
+            loading.value = false
         }
     }
+
 }

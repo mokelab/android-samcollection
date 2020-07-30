@@ -41,9 +41,6 @@
                 app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
                 app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
-    <fragment android:id="@+id/jetpackLiveDataFragment"
-              android:name="com.mokelab.demo.samcollection.jetpack.arch.livedata.JetpackLiveDataFragment"
-              android:label="JetpackLivedataFragment"/>
     <fragment android:id="@+id/jetpackDatabindingTopFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.databinding.JetpackDatabindingTopFragment"
               android:label="JetpackDatabindingTopFragment">
@@ -74,9 +71,6 @@
                 app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
                 app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
-    <fragment android:id="@+id/jetpackViewModelScopeFragment"
-              android:name="com.mokelab.demo.libs.jetpack.arch.viewmodel.JetpackViewModelScopeFragment"
-              android:label="JetpackViewModelScopeFragment"/>
     <fragment android:id="@+id/jetpackRoomTopFragment"
               android:name="com.mokelab.demo.samcollection.jetpack.arch.room.JetpackRoomTopFragment"
               android:label="JetpackRoomTopFragment">
