@@ -40,7 +40,7 @@ class JetpackRoomBasicFragment: BindingFragment<JetpackRoomBasicFragmentBinding>
         binding.recycler.adapter = this.adapter
 
         binding.fab.setOnClickListener {
-            Navigation.findNavController(view!!).navigate(R.id.action_jetpackRoomBasic_to_Create)
+            Navigation.findNavController(requireView()).navigate(R.id.action_jetpackRoomBasic_to_Create)
         }
 
         return binding
@@ -48,7 +48,7 @@ class JetpackRoomBasicFragment: BindingFragment<JetpackRoomBasicFragmentBinding>
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        this.viewModel.dao.getAll().observe(this, Observer {
+        this.viewModel.dao.getAll().observe(viewLifecycleOwner, Observer {
             adapter.submitList(it)
             adapter.notifyDataSetChanged()
         })

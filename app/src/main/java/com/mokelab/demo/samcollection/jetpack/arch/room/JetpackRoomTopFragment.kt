@@ -13,6 +13,6 @@ class JetpackRoomTopFragment : MenuListFragment() {
     }
 
     private fun navigate(action: Int) {
-        Navigation.findNavController(view!!).navigate(action)
+        Navigation.findNavController(requireView()).navigate(action)
     }
 }

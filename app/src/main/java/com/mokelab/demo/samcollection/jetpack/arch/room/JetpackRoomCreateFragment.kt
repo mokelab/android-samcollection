@@ -61,10 +61,10 @@ class JetpackRoomCreateFragment: BindingFragment<JetpackRoomCreateFragmentBindin
                     val article = Article(0, title, content)
                     viewModel.dao.insert(article)
                 }
-                Navigation.findNavController(view!!).popBackStack()
+                Navigation.findNavController(requireView()).popBackStack()
             }
         } catch (e: Exception) {
-            Snackbar.make(view!!, "Failed to insert", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(requireView(), "Failed to insert", Snackbar.LENGTH_SHORT).show()
         }
     }
 
