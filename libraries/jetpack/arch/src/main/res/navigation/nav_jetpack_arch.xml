@@ -20,7 +20,14 @@
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim"            />
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_arch_top_to_databinding"
+            app:destination="@id/jetpackDatabindingTopFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
     <fragment
         android:id="@+id/jetpackViewModelTopFragment"
@@ -49,4 +56,31 @@
         android:id="@+id/jetpackLiveDataFragment"
         android:name="com.mokelab.demo.libs.jetpack.arch.livedata.JetpackLiveDataFragment"
         android:label="JetpackLiveDataFragment" />
+    <fragment
+        android:id="@+id/jetpackDatabindingTopFragment"
+        android:name="com.mokelab.demo.libs.jetpack.arch.databinding.JetpackDatabindingTopFragment"
+        android:label="JetpackDatabindingTopFragment" >
+        <action
+            android:id="@+id/action_databinding_to_basic"
+            app:destination="@id/jetpackDatabindingBasicFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_databinding_to_twoway"
+            app:destination="@id/jetpackDatabindingTwoWayFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/jetpackDatabindingBasicFragment"
+        android:name="com.mokelab.demo.libs.jetpack.databinding.JetpackDatabindingBasicFragment"
+        android:label="JetpackDatabindingBasicFragment" />
+    <fragment
+        android:id="@+id/jetpackDatabindingTwoWayFragment"
+        android:name="com.mokelab.demo.libs.jetpack.databinding.JetpackDatabindingTwoWayFragment"
+        android:label="JetpackDatabindingTwoWayFragment" />
 </navigation>

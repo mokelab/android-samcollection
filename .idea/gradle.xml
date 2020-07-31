@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/libraries/jetpack" />
             <option value="$PROJECT_DIR$/libraries/jetpack/arch" />
             <option value="$PROJECT_DIR$/libraries/jetpack/core" />
+            <option value="$PROJECT_DIR$/libraries/jetpack/databinding" />
             <option value="$PROJECT_DIR$/libraries/jetpack/ui" />
             <option value="$PROJECT_DIR$/utils" />
             <option value="$PROJECT_DIR$/utils/recycler" />

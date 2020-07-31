@@ -1,10 +1,9 @@
-package com.mokelab.demo.samcollection.jetpack.arch.databinding
+package com.mokelab.demo.libs.jetpack.databinding
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.mokelab.demo.samcollection.R
-import com.mokelab.demo.samcollection.databinding.JetpackDatabindingTwowayFragmentBinding
+import com.mokelab.demo.libs.jetpack.databinding.databinding.JetpackDatabindingTwowayFragmentBinding
 
 class JetpackDatabindingTwoWayFragment: Fragment(R.layout.jetpack_databinding_twoway_fragment) {
     private var _binding: JetpackDatabindingTwowayFragmentBinding? = null

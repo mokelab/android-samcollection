@@ -1,3 +1,4 @@
+include ':libraries:jetpack:databinding'
 include ':libraries:jetpack:arch'
 include ':libraries:jetpack:ui'
 include ':utils:recycler'
